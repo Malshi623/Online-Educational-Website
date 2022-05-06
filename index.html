@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+  <meta name = "viewport" content=" = " width="device-width, initial-scale1.0" > 
+
+
+
+  <title>teacheX</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/teachex.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- custom styles for top button -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- custom styles for footer -->
+  <link rel="stylesheet" href="css/style2.css">
+  
+
+  <style>
+      .container{
+          padding-top: 1px;
+          padding-bottom: 0px;
+          padding-left: 1px;
+          padding-right: 0px;
+      }
+      .jumbotron{
+          background-color:MidnightBlue;
+          color:white;
+          font-weight: 500;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          text-align: center;
+          font-weight: 400;
+      }
+      #avtr{
+          margin-top: 15px;
+          margin-left: 20px;
+      }
+      body{
+          background-color: #eee;
+      }
+
+      #brand{
+          font-family: Pacifico;
+      }
+      #crdimg{
+        opacity: 0.9;
+         width: 100%;
+         height: 175px;
+         float: right;
+         margin-bottom: 10px;
+      }
+      #logo{
+        opacity: 1;
+         width: 150px;
+         height:auto 60px;
+         float: right;
+      }
+       .dropdown-menu{
+            background-color: black;
+            opacity: 0.6;
+       }
+       #searchbr{
+           align-self: center;
+       }
+      
+      .tab-content{
+          border-left: 1px solid #ddd ;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          padding: 10px;
+     }
+     #carouselimg{
+         opacity: 0.9;
+         width: 100%;
+         height: 500px auto;
+         float: none;
+         margin-bottom: 10px;
+     }
+     
+     #head1{
+         font-family: 'Pacifico';
+
+     }
+     .h5{
+         color: black;
+     }
+     #crdleft{
+         position: absolute;
+         left: 20px;
+         padding-left: 10px;
+         padding-right: 10px;
+         opacity: 1;
+     }
+     #signup{
+         opacity: 1;
+     }
+     #para{
+         font-family: 'Hind+Siliguri';
+     }
+     #wow{
+        font-family: 'Oswald';
+        text-shadow: 1px 1px 5px rgb(255, 216, 144);
+     }
+     #imgcaption{
+        text-shadow: 1px 1px 2px black;
+     }
+     .avatar {
+        vertical-align: middle;
+        width: 70px;
+        height: auto 70px;
+        border-radius: 50%;
+    }
+     .text-block{
+         position: absolute;
+         top: 50px;
+         right: 50px;
+         background-color: black;
+         color: cornsilk;
+         padding-left: 20px;
+         padding-right: 20px;
+         opacity: 0.6;
+     }
+     .navbar{
+         opacity: 0.9;
+     }
+     .card{
+         margin: 0 auto;
+         float: none;
+         margin-bottom: 10px;
+         font-family: 'Hind+Siliguri';
+     }
+     .nav-tabs{
+         margin-bottom: 0;
+     }
+      </style>
+
+
+</head>
+<body class="bg-dark ">
+  <a id="topbutton"></a>
+  <div class="container">
+    <nav class="navbar  navbar-header navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" id = "brand" href="#"><h5 class="animated fadeIn mb-2">
+                <img class="rounded " src="img/teachex.png" id="logo">
+        </h5></a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for anything" aria-label="search">
+        </form>
+            <div class="pull-right">
+                
+                <button type="button" class="btn btn-outline-warning waves-effect btn-sm " aria-label="right align">
+                    Upgrade to Pro
+                </button>
+                <button type="button" class="btn btn-outline-success waves-effect btn-sm " aria-label="right align">
+                    Log In
+                </button>
+                <button type="button" class="btn btn-danger btn-sm " id="signup" aria-label="right align">
+                    Sign Up
+                </button>
+                <button type="button" class="btn btn-outline-danger waves-effect btn-sm pull-right" aria-label="Left Align">
+                    <i class="fas fa-shopping-cart " aria-hidden="true"></i>
+                </button>
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcontent" 
+        aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ative">
+                    <div  class="nav-link" href="#"><a href="#">Home</a></div>
+                </li>
+                <li class="nav-item">
+                        <a  class="nav-link" href="#">
+                            <li class="dropdown ">
+                                    <a  class="dropdown-toggle " data-toggle="dropdown" role="button" 
+                                    aria-haspopup="true" aria-expanded="false" href="#">Catagories <span class="caret"></span></a>
+                                        <div class="dropdown-menu">
+                                            <div class="row">
+                                            <div class="col"><a class="text-warning" href="#">Development</a></div>
+                                            <div class="col"><a class="text-warning" href="#">Business</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Finance & Accounting</a></div>
+                                            <div class="col"><a class="text-warning" href="#">IT & Software</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Office Productivity</a></div>
+                                            <div class="col"><a class="text-warning" href="#">Personal Development</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Design</a></div>
+                                            <div class="col"><a class="text-warning" href="#">Marketing</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Lifestyle</a></div>
+                                            <div class="col"><a class="text-warning" href="#">Photography</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Health & Fitness</a></div>
+                                            <div class="col"><a class="text-warning" href="#">Music</a></div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a class="text-warning" href="#">Teaching & Academics</a></div>
+                                        </div>
+                                        </div>
+                                   
+                            </li>
+                        </a>
+                </li>
+                <li class="nav-item">
+                        <a  class="nav-link" href="#"><li class="dropdown background-dark bg-dark">
+                                <a  class="dropdown-toggle " data-toggle="dropdown" role="button" 
+                                aria-haspopup="true" aria-expanded="false" href="#">Contact Us <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="text-warning" href="#">Email</a></li>
+                                    <li><a class="text-warning" href="#">Phone Number</a></li>
+                                    <li>
+                                        <div><i class="fab fa-facebook-f fa-fw blue-text "></i>
+                                        <i class="fab fa-twitter fa-fw blue-text "></i>
+                                        <i class="fab fa-instagram fa-fw pink-text "></i>
+                                        <i class="fab fa-linkedin fa-fw blue-text "></i>
+                                    </div></li>
+                                </ul>
+                        </li></a>
+                </li>
+                    
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div id="thecarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#thecarousel" data-slide-to="0" class="active" ></li>
+            <li data-target="#thecarousel" data-slide-to="1" ></li>
+            <li data-target="#thecarousel" data-slide-to="2" ></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active animated fadeIn mb-2">
+                <div class="slide1">
+                    <img class="rounded " src="img/gunnar-sigurdarson-l-EssfCmQ_s-unsplash.jpg" 
+                    id="carouselimg" alt="first slide">
+                    <div id="imgcaption" class="carousel-caption">
+                        <p><h1>Accelerate your skills and future.</h1></p>
+                        <p><h3>Anytime, anywhere.</h3></p>
+                    </div>
+                </div>     
+            </div>
+            <div class="carousel-item animated fadeIn mb-2">
+                <div class="slide2">
+                    <img class="rounded "  src="img/alejandro-escamilla-N7XodRrbzS0-unsplash.jpg" 
+                    id="carouselimg"  alt="first slide">
+                    <div id="imgcaption"  class="carousel-caption">
+                        <p class="text"><h1>1000 of Programs online </h1> </p>
+                        </p><h3>with lectures and&nbsp;&nbsp;videos.</h3></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item animated fadeIn mb-2">
+                <div class="slide3">
+                    <img class="rounded "  src="img/luke-southern-OHQDb-l-g1w-unsplash.jpg" 
+                    id="carouselimg"  alt="first slide">
+                    <div id="imgcaption"  class="carousel-caption">
+                        <p><h1>Join for Free</h1></p>
+                        <p>Learn with best</p>
+                        <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control-prev" href="#thecarousel" data-slide="prev">
+            <i class="fas fa-angle-left" aria-hidden="true"></i>
+        </a>
+            
+        <a class="right carousel-control-next" href="#thecarousel" data-slide="next">
+                <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <br>
+    <div class="jumbotron rounded">
+        <hr >
+       <p> <h2>Get personalized recommendation</h2> </p>
+       <p><h6>Answer a few question for your top pick course</h6></p>
+       <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+            Get Started
+        </button>
+    </div>
+    <br>
+
+
+    <div class="container ">
+        <h1 id="wow" class="font-weight-bold ml-3">     Big Wow of today...</h1>
+            <div id="thecarousel2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#thecarousel2" data-slide-to="0" class="active" ></li>
+                    <li data-target="#thecarousel2" data-slide-to="1" ></li>
+                    <li data-target="#thecarousel2" data-slide-to="2" ></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active animated fadeIn mb-2">
+                        <div class="row">
+                            <div class="card" style="width: 20rem;">
+                                <img id="crdimg" src="img/hack.jpg">
+                                <div class="card-body">
+                                    <h5 class="card-title text-default" >The Complete Cyber Security Course : Hackers Exposed!</h5>
+                                    <p class="card-text text-justify">Learn a practical skill-set in defeating all online threats.
+                                        Become a Cyber Security Specialist...</p>
+                                    <div class="row">
+                                            <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                    More Info
+                                                </button>
+                                                <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$149.98</del> Free</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                                    <img id="crdimg" src="img/pixel.jpeg">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-default">Pixel Art Master Course - Beginner to Professional/Freelance</h5>
+                                        <p class="card-text text-justify">This course teaches everything about pixel art for video games. From the very basics to the advanced techniques.</p>
+                                        <div class="row">
+                                                <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                        More Info
+                                                    </button>
+                                                    <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$18.99</del> Free</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 20rem;">
+                                        <img id="crdimg" src="img/hip hop.jpeg">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-default">How to Dance: Kick Ball Change / Top Rock</h5>
+                                            <p class="card-text text-justify">The Kick Ball Change is one of the most important move you will master because it is the foundation for many 
+                                                other hip hop moves. Learn and master this dance move in this 9 lesson comprehensive course.</p>
+                                            <div class="row">
+                                                    <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                            More Info
+                                                        </button>
+                                                        <div class="col-sm-6 ml-3 text-danger"><del class="text-muted">$199.98</del> $19.89</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>     
+                    </div>
+                    <div class="carousel-item animated fadeIn mb-2">
+                            <div class="row">
+                                    <div class="card" style="width: 20rem;">
+                                            <img id="crdimg" src="img/piano.jpeg">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-default">Pianoforall - Incredible New Way To Learn Piano & Keyboard</h5>
+                                            <p class="card-text text-justify">Imagine being able to sit down at a piano and just PLAY - Ballads,  Pop, Blues,
+                                                 Jazz, Ragtime, even amazing Classical pieces? Now you can... </p>
+                                            <div class="row">
+                                                    <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                            More Info
+                                                        </button>
+                                                        <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$11.47</del> Free</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 20rem;">
+                                            <img id="crdimg" src="img/utube.jpeg">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-default">2019 YouTube Marketing & YouTube SEO To Get 1,000,000+ Views</h5>
+                                                <p class="card-text text-justify">You will be able to use my advice to create your own winning YouTube channel that 
+                                                    helps you achieve your greater business goals.</p>
+                                                <div class="row">
+                                                        <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                                More Info
+                                                            </button>
+                                                            <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$13.59</del> Free</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 20rem;">
+                                                <img id="crdimg" src="img/flutter.jpg">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-default">Flutter & Dart - The Complete Flutter App Development Course</h5>
+                                                    <p class="card-text text-justify">Welcome to The Complete Flutter App Development Course ( The World's First Complete 
+                                                        Dart and Flutter Course).  I am so excited to introduce this new course to all of you!  </p>
+                                                    <div class="row">
+                                                            <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                                    More Info
+                                                                </button>
+                                                                <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$39.99</del> $9.99</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>  
+                    </div>
+                    <div class="carousel-item animated fadeIn mb-2">
+                            <div class="row">
+                                    <div class="card" style="width: 20rem;">
+                                            <img id="crdimg" src="img/ccne.jpeg">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-default">CCNA Security 2019 210-260 Video Boot Camp With Chris Bryant</h5>
+                                            <p class="card-text text-justify">Every single video in this CCNA Security 210-260 Video Boot Camp is downloadable, 
+                                                and you'll get your certification with the clearest, most comprehensive CCNA Security course available</p>
+                                            <div class="row">
+                                                    <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                            More Info
+                                                        </button>
+                                                        <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$99.99</del> $9.99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 20rem;">
+                                            <img id="crdimg" src="img/gcloud.jpg">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-default">Google Cloud Productivity - Drive and Google's Office Suite</h5>
+                                                <p class="card-text text-justify">Google has created an amazing set of office productivity tools that
+                                                     anybody can use for free! This course will have you jumping right in and learning everything from
+                                                      the basics to some of the more advanced techniques. </p>
+                                                <div class="row">
+                                                        <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                                More Info
+                                                            </button>
+                                                            <div class="col-sm-5 ml-5 text-danger"><del class="text-muted">$79.99</del> Free</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 20rem;">
+                                                <img id="crdimg" src="img/ibanking.png">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-default ">The Complete Investment Banking Course 2019 </h5>
+                                                    <p class="card-text text-justify">he course starts off by introducing you to the four main areas of 
+                                                        investment banking – Capital Markets, Advisory, Trading and Brokerage, and Asset Management.Then we 
+                                                        continue by digging deeper into each line of business.   </p>
+                                                    <div class="row">
+                                                            <button type="button" class="btn btn-success btn-sm " id="signup" aria-label="right align">
+                                                                    More Info
+                                                                </button>
+                                                                <div class="col-sm-6 ml-3 text-danger"><del class="text-muted">$149.99</del> $19.99</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>  
+                    </div>
+                </div>
+            
+                    <a class="left carousel-control-prev" href="#thecarousel2" data-slide="prev">
+                        <i class="fas fa-angle-left fa-fw pink-text" aria-hidden="true"></i>
+                    </a>
+                        
+                    <a class="right carousel-control-next" href="#thecarousel2" data-slide="next">
+                        <i class="fas fa-angle-right fa-fw pink-text" aria-hidden="true"></i>
+                    </a>
+                </div>
+                
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <h1 id="wow" class="font-weight-bold ml-3">What our students says...</h1>
+        <div id="thecarousel3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#thecarousel3" data-slide-to="0" class="active" ></li>
+                <li data-target="#thecarousel3" data-slide-to="1" ></li>
+                <li data-target="#thecarousel3" data-slide-to="2" ></li>
+            </ol>
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active animated fadeIn mb-2">
+                    <div class="row">
+                        <div class="card"  style="width: 20rem;">
+                                <div class="form-group row" id="avtr">
+                                        <img class="avatar" src="img/Sawyer.jpeg" alt="Avatar"> 
+                                        <div class="col-sm-4">
+                                            <div class="text-right ml-10 mt-3">Sawyer</div>
+                                        </div>
+                                    </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-default" >Followed :-Java Programming Masterclass for Software Developers</h5>
+                                <p class="card-text text-justify font-italic">"Wow! This is one long course and not for the faint hearted. It is very well presented, 
+                                    with lots of resources. I did find it hard going especially in the last quarter of the course, which I 
+                                    plan to redo in the near future."</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                                <div class="row" id="avtr">
+                                        <img class="avatar" src="img/emma.jpg" alt="Avatar"> 
+                                        <div class="col-sm-4">
+                                            <div class="text-right ml-10 mt-3">Emma</div>
+                                        </div>
+                                    </div> 
+                            <div class="card-body">
+                                <h5 class="card-title text-default">Followed :-Supply Chain Management</h5>
+                                    <p class="card-text text-justify font-italic">"The material I am learning in the Supply Chain Management program is useful every single 
+                                        day and has helped me become very effective in a leadership role."</p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                                <div class="form-group row" id="avtr">
+                                    <img class="avatar" src="img/olivia.jpg" alt="Avatar"> 
+                                    <div class="col-sm-4">
+                                        <div class="text-right ml-10 mt-3">Olivia</div>
+                                    </div>
+                                </div>
+                        <div class="card-body">
+                                    <h5 class="card-title text-default text-default">Followed :-Angular 8 - The Complete Guide (2019+ Edition)</h5>
+                                    <p class="card-text text-justify font-italic">"Thanks teacheX to lightend my future.I folllow Angular course & finally now,I got my path."</p>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="carousel-item animated fadeIn mb-2">
+                        <div class="row">
+                                <div class="card" style="width: 20rem;">
+                                        <div class="form-group row" id="avtr">
+                                            <img class="avatar" src="img/avatar.jpg" alt="Avatar"> 
+                                            <div class="col-sm-4">
+                                                <div class="text-right ml-10 mt-3">Ibukun</div>
+                                            </div>
+                                        </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-default">Followed :-The Complete Investment Banking Course 2019</h5>
+                                                <p class="card-text text-justify font-italic">This class goes into great details about project scheduling. 
+                                                    It's something you can watch once and gain a great deal of knowledge but it's not something you want to 
+                                                    watch only once. This is my third time going through the course and I feel that each time I go through I'm
+                                                     learning something new. </p>
+                                                </div>
+                                        
+                                    </div>
+                            <div class="card" style="width: 20rem;">
+                                    <div class="form-group row" id="avtr">
+                                            <img class="avatar" src="img/avatar.jpg" alt="Avatar"> 
+                                            <div class="col-sm-4">
+                                                <div class="text-right ml-10 mt-3">Sameera </div>
+                                            </div>
+                                        </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-default">Followed :-Pixel Art Master Course - Beginner to Professional/Freelance</h5>
+                                    <p class="card-text text-justify font-italic">The things I learn here may seem obvious to the artists, but they are both subtle and essential when it comes to the laymen like me. 
+                                        The course will not make you an artist at an instance, yet it provides a welcoming path to follow to this goal, if you keep an observing eye the way.</p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 20rem;">
+                                    <div class="form-group row" id="avtr">
+                                            <img class="avatar" src="img/Basheir.jpeg" alt="Avatar"> 
+                                            <div class="col-sm-4">
+                                                <div class="text-right ml-10 mt-3">Basheir</div>
+                                            </div>
+                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-default">Followed :-The Complete Investment Banking Course 2019</h5>
+                                        <p class="card-text text-justify font-italic">Concise and clear presentation, useful as an aid to any text book 
+                                            or general book on investment banking. Suggest that you listen to it at 2x speed since most of the content 
+                                            is easy to whiz through. The level of detail is appropriate for someone with basic understanding of the fundamentals
+                                             of finance and the instructor does an excellent job of selecting key concepts in each section and explaining them well.</p>
+                                        </div>
+                            </div>  
+                        </div>
+                    </div>
+                    </div>
+
+                
+                    <a class="left carousel-control-prev" href="#thecarousel3" data-slide="prev">
+                        <i class="fas fa-angle-left fa-fw pink-text" aria-hidden="true"></i>
+                    </a>
+                        
+                    <a class="right carousel-control-next" href="#thecarousel3" data-slide="next">
+                        <i class="fas fa-angle-right fa-fw pink-text" aria-hidden="true"></i>
+                </a>
+        </div>
+    </div>
+	
+	<footer class="flex-rw">
+  
+  <ul class="footer-list-top ">
+    <li class="text-center">
+      <h4 class="footer-list-header">About teacheX</h4></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor " itemprop="significantLink">WHO WE ARE</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">ABOUT LECTURERS</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">TEACH ON teacheX</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">PROMOTIONS</h4></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor">FREE COURSES</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor">DISCOUNTED COURSES</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor">EVENTS</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header">SUPPORT</h4></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+    <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+    <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink">SITE MAP</a></li>
+  </ul>
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> 2019 teacheX in <address class="footer-address" role="company address">Sabaragamuwa, LK</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="#" class="generic-anchor" rel="nofollow">Terms</a> | <a href="#" class="generic-anchor" rel="nofollow">Privacy</a>
+      </div>
+  </section>
+</footer>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- custom scripts for top button -->
+  <script type="text/javascript" src="js/topbutton.js"></script>
+
+</body>
+</html>
